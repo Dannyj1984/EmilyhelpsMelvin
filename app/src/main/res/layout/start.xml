@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/frontcover">
+
+
+    <EditText
+        android:id="@+id/nameText1"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="157dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginStart="268dp"
+        android:layout_marginTop="156dp"
+        android:hint="Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/nameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="252dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:onClick="enterName"
+        android:text="Enter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameText1" />
+
+    <RadioGroup
+        android:id="@+id/rg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/nameText1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/boyButton"
+            android:layout_width="68dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="17dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginStart="200dp"
+            android:checked="false"
+            android:onClick="onRadioButtonClicked"
+            android:text="Boy"
+            app:layout_constraintEnd_toStartOf="@+id/girlButton"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioButton
+            android:id="@+id/girlButton"
+            android:layout_width="71dp"
+            android:layout_height="28dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="207dp"
+            android:layout_marginStart="10sp"
+            android:checked="false"
+            android:onClick="onRadioButtonClicked"
+            android:text="Girl"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/boyButton" />
+
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>

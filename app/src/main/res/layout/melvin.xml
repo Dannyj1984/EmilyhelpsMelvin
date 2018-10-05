@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/northpolesign"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/marvinLeft"
+        android:layout_width="97dp"
+        android:layout_height="135dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/rudolphleft"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/marvinDummy"
+        app:layout_constraintTop_toBottomOf="@+id/rudolphSpeak1" />
+
+    <ImageView
+        android:id="@+id/marvinDummy"
+        android:layout_width="97dp"
+        android:layout_height="135dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/rufuscryright"
+        app:layout_constraintEnd_toStartOf="@+id/marvinLeft"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/melvinSpeak1" />
+
+
+    <EditText
+        android:id="@+id/melvinText1"
+        android:layout_width="417dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="70dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="I can't sleep daddy. I need something to help me sleep."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/rudolphText1"
+        android:layout_width="417dp"
+        android:layout_height="87dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginStart="83dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/melvinSpeak1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="110dp"
+        android:background="@color/colorPrimary"
+        android:onClick="melvinSpeak1"
+        android:text="Melvin"
+        app:layout_constraintBottom_toTopOf="@+id/marvinDummy"
+        app:layout_constraintEnd_toStartOf="@+id/rudolphSpeak1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/rudolphSpeak1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="110dp"
+        android:background="@color/colorPrimary"
+        android:onClick="rudolphSpeak1"
+        android:text="Rudolph"
+        app:layout_constraintBottom_toTopOf="@+id/marvinLeft"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/melvinSpeak1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="64dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="page2"
+        android:text="Page 2"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="67dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginStart="6dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:onClick="reset"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/melvinText1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/northpole"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/santaImage2"
+        android:layout_width="166dp"
+        android:layout_height="113dp"
+        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="9dp"
+        android:src="@drawable/father_xmas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Page3" />
+
+    <ImageView
+        android:id="@+id/rudolphImage2"
+        android:layout_width="166dp"
+        android:layout_height="113dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/rudolphright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/santaImage2" />
+
+    <TextView
+        android:id="@+id/rudolphText2"
+        android:layout_width="517dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="59dp"
+        android:text="Hi Father Christmas, Melvin can't sleep and I want to write a letter to Emily to see if she will give her dummy to him."
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rudolphImage2" />
+
+    <TextView
+        android:id="@+id/santaText2"
+        android:layout_width="517dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="59dp"
+        android:text="Emily is a big girl now. I am sure she will be happy to be able to help baby Melvin."
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rudolphImage2" />
+
+    <Button
+        android:id="@+id/santaSpeak2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="santaSpeak2"
+        android:text="Father Christmas"
+        app:layout_constraintBottom_toTopOf="@+id/santaImage2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/rudolphSpeak2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="54dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="rudolphSpeak2"
+        android:text="rudolph"
+        app:layout_constraintBottom_toTopOf="@+id/rudolphImage2"
+        app:layout_constraintEnd_toStartOf="@+id/santaImage2" />
+
+    <Button
+        android:id="@+id/backButton1"
+        android:layout_width="61dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="page1"
+        android:text="Page 1"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Page3"
+        android:layout_width="61dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="page3"
+        android:text="Page 3"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
