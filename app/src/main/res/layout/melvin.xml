@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,98 +9,120 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/marvinLeft"
-        android:layout_width="97dp"
-        android:layout_height="135dp"
-        android:layout_marginEnd="114dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="7dp"
+        android:id="@+id/rudolphLeft"
+        android:layout_width="278dp"
+        android:layout_height="182dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="33dp"
+        android:layout_marginEnd="36dp"
         android:src="@drawable/rudolphleft"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/marvinDummy"
-        app:layout_constraintTop_toBottomOf="@+id/rudolphSpeak1" />
+        app:layout_constraintStart_toEndOf="@+id/marvinCry"
+        app:layout_constraintTop_toBottomOf="@+id/rudolphText1" />
 
     <ImageView
-        android:id="@+id/marvinDummy"
+        android:id="@+id/marvinCry"
         android:layout_width="97dp"
-        android:layout_height="135dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="290dp"
-        android:layout_marginTop="7dp"
+        android:layout_height="151dp"
+        android:layout_alignBottom="@+id/melvinSpeak1"
+        android:layout_alignStart="@+id/melvinSpeak1"
         android:src="@drawable/rufuscryright"
-        app:layout_constraintEnd_toStartOf="@+id/marvinLeft"
+        app:layout_constraintEnd_toStartOf="@+id/rudolphLeft"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/melvinSpeak1" />
+        app:layout_constraintTop_toBottomOf="@+id/rudolphText1" />
+
+    <ImageView
+        android:id="@+id/rudolphBubble"
+        android:layout_width="wrap_content"
+        android:layout_height="177dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="27dp"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/speechbubbleleft"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/melvinBubble"
+        android:layout_width="326dp"
+        android:layout_height="153dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/melvinText1"
+        android:src="@drawable/speechbubbleright"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <EditText
         android:id="@+id/melvinText1"
-        android:layout_width="417dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="70dp"
+        android:layout_width="134dp"
+        android:layout_height="103dp"
+        android:layout_alignEnd="@+id/marvinCry"
+        android:layout_below="@+id/resetButton"
+        android:layout_marginTop="-21dp"
+        android:background="@android:color/transparent"
         android:ems="10"
         android:inputType="textMultiLine"
         android:text="I can't sleep daddy. I need something to help me sleep."
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.146"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/rudolphText1"
-        android:layout_width="417dp"
-        android:layout_height="87dp"
-        android:layout_marginBottom="2dp"
-        android:layout_marginEnd="92dp"
-        android:layout_marginStart="83dp"
+        android:layout_width="153dp"
+        android:layout_height="103dp"
+        android:layout_above="@+id/rudolphLeft"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="80dp"
+        android:background="@android:color/transparent"
         android:ems="10"
         android:inputType="textMultiLine"
+        android:text="I will speak to Father Christmas and see if he has any ideas."
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/rudolphBubble"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <Button
         android:id="@+id/melvinSpeak1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="7dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="292dp"
-        android:layout_marginTop="110dp"
-        android:background="@color/colorPrimary"
+        android:layout_width="98dp"
+        android:layout_height="175dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/rudolphLeft"
+        android:layout_marginStart="143dp"
+        android:background="@android:color/transparent"
         android:onClick="melvinSpeak1"
-        android:text="Melvin"
-        app:layout_constraintBottom_toTopOf="@+id/marvinDummy"
-        app:layout_constraintEnd_toStartOf="@+id/rudolphSpeak1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/rudolphSpeak1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="7dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="110dp"
-        android:background="@color/colorPrimary"
+        android:layout_width="199dp"
+        android:layout_height="186dp"
+        android:layout_alignTop="@+id/rudolphLeft"
+        android:layout_toEndOf="@+id/melvinBubble"
+        android:background="@android:color/transparent"
         android:onClick="rudolphSpeak1"
-        android:text="Rudolph"
-        app:layout_constraintBottom_toTopOf="@+id/marvinLeft"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/melvinSpeak1"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/marvinCry"
+        app:layout_constraintTop_toBottomOf="@+id/rudolphText1" />
 
     <Button
+        android:id="@+id/button"
         android:layout_width="64dp"
         android:layout_height="43dp"
-        android:layout_marginTop="16dp"
+        android:layout_alignEnd="@+id/rudolphBubble"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
         android:backgroundTint="@android:color/transparent"
         android:onClick="page2"
         android:text="Page 2"
@@ -123,4 +145,6 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
-</android.support.constraint.ConstraintLayout>
+
+
+</RelativeLayout>
