@@ -16,6 +16,7 @@
         android:layout_marginEnd="200dp"
         android:layout_marginStart="200dp"
         android:layout_marginTop="156dp"
+        android:inputType="textPersonName"
         android:hint="Name" />
 
     <Button

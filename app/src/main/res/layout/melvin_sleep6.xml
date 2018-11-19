@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/northpolesign"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/rudolphLeft8"
+        android:layout_width="278dp"
+        android:layout_height="182dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="33dp"
+        android:layout_marginEnd="36dp"
+        android:src="@drawable/rudolphleft"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/marvinCry"
+        app:layout_constraintTop_toBottomOf="@+id/rudolphText8" />
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="138dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="214dp"
+        android:src="@drawable/cot" />
+
+    <ImageView
+        android:id="@+id/marvinCry"
+        android:layout_width="97dp"
+        android:layout_height="151dp"
+        android:layout_alignTop="@+id/rudolphLeft8"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="29dp"
+        android:src="@drawable/rufus_dummy"
+        app:layout_constraintEnd_toStartOf="@+id/rudolphLeft8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rudolphText8" />
+
+    <ImageView
+        android:id="@+id/rudolphBubble8"
+        android:layout_width="wrap_content"
+        android:layout_height="177dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="27dp"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/speechbubbleleft"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/melvinBubble8"
+        android:layout_width="219dp"
+        android:layout_height="124dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="79dp"
+        android:src="@drawable/speechbubbleleft"
+        android:visibility="visible" />
+
+
+    <EditText
+        android:id="@+id/melvinText8"
+        android:layout_width="134dp"
+        android:layout_height="103dp"
+        android:layout_below="@+id/page7Back"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="50dp"
+        android:layout_toStartOf="@+id/rudolphBubble8"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="ZZZZzzzzzzzzz"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@id/melvinBubble8"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/rudolphText8"
+        android:layout_width="153dp"
+        android:layout_height="103dp"
+        android:layout_above="@+id/rudolphLeft"
+        android:layout_alignStart="@+id/rudolphSpeak8"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="82dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text=""
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rudolphBubble8"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/melvinSpeak8"
+        android:layout_width="wrap_content"
+        android:layout_height="96dp"
+        android:layout_alignBottom="@+id/marvinCry"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="162dp"
+        android:layout_marginBottom="-13dp"
+        android:background="@android:color/transparent"
+        android:onClick="melvinSpeak8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/rudolphSpeak8"
+        android:layout_width="199dp"
+        android:layout_height="186dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="147dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="26dp"
+        android:background="@android:color/transparent"
+        android:onClick="rudolphSpeak8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/marvinCry"
+        app:layout_constraintTop_toBottomOf="@+id/rudolphText8" />
+
+
+    <Button
+        android:id="@+id/page7Back"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="21dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:onClick="page7Back"
+        android:text="Page 7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/melvinText8"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</RelativeLayout>

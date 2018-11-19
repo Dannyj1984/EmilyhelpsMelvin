@@ -20,12 +20,29 @@
         android:fontFamily="@font/bad_script"
         android:inputType="textMultiLine"
         android:text="Dear Emily,                              Melvin the baby reindeer is struggling to sleep at night time. I wanted to ask if he could have your dummy to help him sleep. In return I will leave you a very special present. Love from Father Christmas and Rudolph xx"
-        android:textSize="10sp" />
+        android:textSize="13sp" />
+
+    <Button
+        android:layout_width="104dp"
+        android:layout_height="120dp"
+        android:layout_alignEnd="@+id/back2Button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-344dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="letter" />
 
     <Button
         android:id="@+id/back2Button"
-        android:layout_width="77dp"
-        android:layout_height="wrap_content"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/letterText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="513dp"
+        android:layout_marginBottom="212dp"
         android:backgroundTint="@android:color/transparent"
         android:onClick="back2"
         android:text="Page 2" />
