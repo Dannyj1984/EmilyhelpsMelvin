@@ -10,7 +10,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/santaFly"
         android:layout_width="275dp"
         android:layout_height="151dp"
         android:layout_alignParentEnd="true"
@@ -19,11 +19,19 @@
         android:layout_marginTop="14dp"
         android:src="@drawable/fatherxmasreindeer" />
 
+    <Button
+        android:layout_width="275dp"
+        android:layout_height="147dp"
+        android:layout_alignStart="@+id/santaFly"
+        android:layout_alignTop="@+id/santaFly"
+        android:onClick="santaMove"
+        android:visibility="invisible" />
+
     <EditText
         android:id="@+id/christmasSkyText"
         android:layout_width="322dp"
         android:layout_height="74dp"
-        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignEnd="@+id/santaFly"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="59dp"
@@ -39,15 +47,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/imageView"
+        android:layout_alignTop="@+id/santaFly"
         android:backgroundTint="@android:color/transparent"
         android:onClick="page4Back"
         android:text="Page 4" />
 
     <Button
+        android:id="@+id/santaFlyButton"
+        android:layout_width="318dp"
+        android:layout_height="73dp"
+        android:layout_alignStart="@+id/christmasSkyText"
+        android:layout_alignTop="@+id/christmasSkyText"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="santaFly"/>
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageView"
+        android:layout_alignTop="@+id/santaFly"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="297dp"
         android:layout_marginEnd="0dp"

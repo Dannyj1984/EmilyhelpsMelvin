@@ -1,5 +1,7 @@
 package com.example.android.emilyhelpsmelvin;
 
+import android.support.animation.DynamicAnimation;
+import android.support.animation.FlingAnimation;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -176,7 +178,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    
+
 
     public void santaSpeak2(View view) {
 
@@ -205,6 +207,10 @@ public class MainActivity extends AppCompatActivity {
         rudolphBubble1 = findViewById(R.id.rudolphBubble1);
         reset = findViewById(R.id.resetButton);
         reset1();
+    }
+
+    public void santaMove(View view) {
+
     }
 
 
@@ -309,6 +315,20 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.xmas_sky4);
     }
+
+    public void santaFly(View view) {
+
+            // Get a reference to the view
+            ImageView emoji = findViewById(R.id.santaFly);
+
+// Pass it to the constructor
+            FlingAnimation flingAnimation
+                    = new FlingAnimation(emoji, DynamicAnimation.X);
+            flingAnimation.setStartVelocity(-10000f);
+            flingAnimation.setFriction(1.5f);
+            flingAnimation.start();
+        }
+
 
 
     public void page6(View v) {
